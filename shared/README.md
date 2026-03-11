@@ -58,10 +58,10 @@ Teams 1–4 are **parallel** (all read from the same `raw_dataset.csv`). Team 5 
 
 | Notebook | Team | Input | Output | Task Summary |
 |---|---|---|---|---|
-| `01_core_numeric.ipynb` | Team 1 | `raw_dataset.csv` | `df_team1` | Clean and convert core numeric & date columns (`Fiyat`, `Yıl`, `Kilometre`, `İlan Tarihi`) |
+| `01_core_numeric.ipynb` | Team 1 | `raw_dataset.csv` | `df_team1` | Clean and convert core numeric & date columns (`Fiyat`, `Yıl`, `Kilometre`, `İlan Tarihi`, `Ortalama Kasko`, `Ortalama Trafik Sigortası`, `Üretim Yılı (İlk/Son)`, `Silindir Sayısı`, `Koltuk Sayısı`, `Bagaj Hacmi`, `Yakıt Deposu`) |
 | `02_categorical_encoding.ipynb` | Team 2 | `raw_dataset.csv` | `df_team2` | Encode all categorical columns describing car classification, type, and seller info |
 | `03_paint_damage.ipynb` | Team 3 | `raw_dataset.csv` | `df_team3` | Engineer numeric features from free-text paint & body damage columns |
-| `04_technical_specs.ipynb` | Team 4 | `raw_dataset.csv` | `df_team4` | Strip units and clean all technical specification & insurance columns |
+| `04_technical_specs.ipynb` | Team 4 | `raw_dataset.csv` | `df_team4` | Strip units and clean all complex technical specification columns |
 | `05_final_merge.ipynb` | Team 5 | `df_team1`–`df_team4` | `processed_dataset.csv` | Merge all outputs, remove duplicates, cap outliers, apply StandardScaler |
 
 ---
@@ -82,7 +82,7 @@ All notebooks are designed for **Google Colab**. Each notebook reads `raw_datase
 
 | Notebook | Columns |
 |---|---|
-| `01_core_numeric.ipynb` | `Fiyat`, `Yıl`, `Kilometre`, `İlan Tarihi` |
+| `01_core_numeric.ipynb` | `Fiyat`, `Yıl`, `Kilometre`, `İlan Tarihi`, `Ortalama Kasko`, `Ortalama Trafik Sigortası`, `Üretim Yılı (İlk/Son)`, `Silindir Sayısı`, `Koltuk Sayısı`, `Bagaj Hacmi`, `Yakıt Deposu` |
 | `02_categorical_encoding.ipynb` | `Marka`, `Seri`, `Model`, `Vites Tipi`, `Yakıt Tipi`, `Kasa Tipi`, `Renk`, `Çekiş`, `Kimden`, `Sınıfı` |
 | `03_paint_damage.ipynb` | `Boya-değişen`, `Orjinal`, `Lokal boyalı`, `Boyalı`, `Değişmiş`, `Belirtilmemiş` → engineered as `total_painted_parts`, `total_changed_parts`, `is_fully_original`, `paint_damage_score`, `Boya-değişen_count` |
-| `04_technical_specs.ipynb` | `Motor Hacmi`, `Motor Gücü`, `Ort. Yakıt Tüketimi`, `Yakıt Deposu`, `Üretim Yılı (İlk/Son)`, `Ortalama Kasko`, `Ortalama Trafik Sigortası`, `Silindir Sayısı`, `Tork`, `Maksimum Güç`, `Minimum Güç`, `Hızlanma (0-100)`, `Maksimum Hız`, `Ortalama Yakıt Tüketimi`, `Şehir İçi Yakıt Tüketimi`, `Şehir Dışı Yakıt Tüketimi`, `Uzunluk`, `Genişlik`, `Yükseklik`, `Ağırlık`, `Boş Ağırlığı`, `Koltuk Sayısı`, `Bagaj Hacmi`, `Ön Lastik` → `Jant Boyutu`, `Aks Aralığı` |
+| `04_technical_specs.ipynb` | `Motor Hacmi`, `Motor Gücü`, `Ort. Yakıt Tüketimi`, `Ortalama Yakıt Tüketimi`, `Şehir İçi Yakıt Tüketimi`, `Şehir Dışı Yakıt Tüketimi`, `Tork`, `Maksimum Güç`, `Minimum Güç`, `Hızlanma (0-100)`, `Maksimum Hız`, `Uzunluk`, `Genişlik`, `Yükseklik`, `Ağırlık`, `Boş Ağırlığı`, `Aks Aralığı`, `Ön Lastik` → `Jant Boyutu` |
