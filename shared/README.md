@@ -10,11 +10,9 @@
 >
 > However, there is **one rule that is non-negotiable:**
 >
-> ### Every code cell MUST be preceded or followed by a markdown cell that explains:
+> ### Every code cell MUST be preceded by a markdown cell that explains:
 > 1. **What you did** — describe the operation you performed in plain language.
 > 2. **Why you did it** — justify your choice. Why did you think this specific approach would work? What made you select this method over alternatives? What problem does it solve?
->
-> A notebook full of code with no explanations will **not** be accepted. The markdown cells are as important as the code itself. Think of them as the reasoning behind your decisions — your grader needs to understand your thought process, not just the output.
 >
 > **Examples of insufficient documentation:**
 > - `## Step 2` ← says nothing
