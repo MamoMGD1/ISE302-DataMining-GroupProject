@@ -52,6 +52,9 @@ All group members contributed equally to the following tasks. Commits touching t
   - Feature scaling (standardisation / min-max normalisation)
   - Preprocessed data saved to `data/processed_dataset.csv`
 
+> **⚠️ Documentation requirement for all Phase 1 notebooks:**
+> The code provided in each `shared/` notebook is a **placeholder template**, not a final solution. Every team is free to devise their own approach. What is mandatory is that **every code cell must be accompanied by a markdown cell** explaining (1) *what* was done and (2) *why* that specific approach was chosen — including the reasoning behind each decision. See `shared/README.md` for full details and examples.
+
 ---
 
 ## Phase 2 – Individual Models (Weeks 6–10)

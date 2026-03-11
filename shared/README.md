@@ -1,5 +1,33 @@
 # Phase 1 — Shared Preprocessing
 
+---
+
+> ## ⚠️ IMPORTANT — Read Before You Touch Any Notebook ⚠️
+>
+> ### The code in these notebooks is a PLACEHOLDER, NOT the final answer.
+>
+> Every notebook in this folder contains sample code that shows **one possible way** to handle the assigned columns. **You are not required to follow it.** You are free — and encouraged — to come up with your own approach if you believe it is more appropriate.
+>
+> However, there is **one rule that is non-negotiable:**
+>
+> ### Every code cell MUST be preceded or followed by a markdown cell that explains:
+> 1. **What you did** — describe the operation you performed in plain language.
+> 2. **Why you did it** — justify your choice. Why did you think this specific approach would work? What made you select this method over alternatives? What problem does it solve?
+>
+> A notebook full of code with no explanations will **not** be accepted. The markdown cells are as important as the code itself. Think of them as the reasoning behind your decisions — your grader needs to understand your thought process, not just the output.
+>
+> **Examples of insufficient documentation:**
+> - `## Step 2` ← says nothing
+> - `# fill nulls` ← already obvious from the code
+>
+> **Examples of sufficient documentation:**
+> - *"We chose median imputation for `Kilometre` because the distribution is right-skewed (visible in the histogram above). Mean imputation would be pulled upward by extreme mileage outliers, misrepresenting typical vehicles. Median is robust to those outliers and better reflects the central tendency."*
+> - *"We used Label Encoding instead of One-Hot Encoding for `Marka` because the column has over 50 unique values. One-Hot would add 50+ binary columns, dramatically increasing dimensionality and making downstream models slower without providing meaningful benefit for tree-based algorithms."*
+>
+> Document every decision. If you tried something and it didn't work, write that down too.
+
+---
+
 ## About This Directory
 
 This folder contains all collaborative preprocessing work done jointly by the entire group before individual model development begins. The work is divided into **4 parallel preprocessing notebooks** (Teams 1–4), each responsible for a distinct subset of columns, and **1 final merge notebook** (Team 5) that combines all outputs into the cleaned, standardized dataset.
