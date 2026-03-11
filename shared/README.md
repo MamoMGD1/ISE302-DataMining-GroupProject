@@ -58,7 +58,7 @@ Teams 1–4 are **parallel** (all read from the same `raw_dataset.csv`). Team 5 
 
 | Notebook | Team | Input | Output | Task Summary |
 |---|---|---|---|---|
-| `01_core_numeric.ipynb` | Team 1 | `raw_dataset.csv` | `df_team1` | Clean and convert core numeric & date columns (`Fiyat`, `Yıl`, `Kilometre`, `İlan Tarihi`, `Ortalama Kasko`, `Ortalama Trafik Sigortası`, `Üretim Yılı (İlk/Son)`, `Silindir Sayısı`, `Koltuk Sayısı`, `Bagaj Hacmi`, `Yakıt Deposu`) |
+| `01_core_numeric.ipynb` | Team 1 | `raw_dataset.csv` | `df_team1` | Clean and convert core numeric & date columns |
 | `02_categorical_encoding.ipynb` | Team 2 | `raw_dataset.csv` | `df_team2` | Encode all categorical columns describing car classification, type, and seller info |
 | `03_paint_damage.ipynb` | Team 3 | `raw_dataset.csv` | `df_team3` | Engineer numeric features from free-text paint & body damage columns |
 | `04_technical_specs.ipynb` | Team 4 | `raw_dataset.csv` | `df_team4` | Strip units and clean all complex technical specification columns |
