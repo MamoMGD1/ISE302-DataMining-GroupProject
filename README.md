@@ -17,8 +17,8 @@ This project follows a two-phase workflow: in Phase 1 (Weeks 1–5) the entire g
 ISE302-DataMining-GroupProject/
 │
 ├── data/
-│   ├── raw/            # Original, unmodified collected CSV files
-│   └── processed/      # Cleaned, encoded, and scaled dataset (output of Phase 1)
+│   ├── raw_dataset.csv            # Original, unmodified collected dataset
+│   └── processed_dataset.csv      # Cleaned, encoded, and scaled dataset (output of Phase 1)
 │
 ├── shared/             # Collaborative notebooks: EDA, cleaning, encoding, scaling
 │
@@ -29,7 +29,7 @@ ISE302-DataMining-GroupProject/
 │       └── README.md   # Student-specific summary (name, algorithm, metrics)
 │
 ├── docs/
-│   └── final-report.pdf  # Final group report (added in Week 12)
+│   └── final-report.pdf  # Final project report (added in Week 12)
 │
 ├── .gitignore          # Python project ignores
 ├── requirements.txt    # Shared Python dependencies
@@ -43,14 +43,14 @@ ISE302-DataMining-GroupProject/
 
 All group members contributed equally to the following tasks. Commits touching the `shared/` and `data/` folders represent joint work.
 
-- **Data Collection** – Identified and gathered the raw dataset; saved to `data/raw/`.
+- **Data Collection** – Identified and gathered the raw dataset; saved to `data/raw_dataset.csv`.
 - **Exploratory Data Analysis (EDA)** – Examined distributions, correlations, and missing-value patterns.
 - **Preprocessing**
   - Handling missing values (imputation / removal)
   - Outlier detection and treatment
   - Categorical encoding (label / one-hot encoding as appropriate)
   - Feature scaling (standardisation / min-max normalisation)
-  - Train/test split saved to `data/processed/`
+  - Preprocessed data saved to `data/processed_dataset.csv`
 
 ---
 
@@ -86,7 +86,7 @@ Each student worked independently on their own branch (`student/<firstname-lastn
    ```
 
 3. **Access the clean dataset**
-   Navigate to `data/processed/` – this is the preprocessed file produced in Phase 1 that all models are trained on.
+   Navigate to `data/processed_dataset.csv` – this is the preprocessed file produced in Phase 1 that all models are trained on.
 
 4. **Explore a student's work**
    Navigate to `students/<student-name>/` and open `model.ipynb` to see that student's full ML pipeline and results.
@@ -113,4 +113,4 @@ Each student worked independently on their own branch (`student/<firstname-lastn
 
 ---
 
-*ISE302 - Data Mining | Semester: [TBD] | Instructor: [TBD]*
+*ISE302 - Data Mining | Semester: 6 | Instructor: Dr. Esin Ayşe Zaimoğlu*
