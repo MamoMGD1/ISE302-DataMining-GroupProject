@@ -105,11 +105,23 @@ Each student worked independently on their own branch (`student/<firstname-lastn
 
 ## Team Members
 
-| Name | Student ID | Algorithm Assigned | Branch |
-|---|---|---|---|
-| TBD | TBD | TBD | student/tbd |
-| TBD | TBD | TBD | student/tbd |
-| TBD | TBD | TBD | student/tbd |
+<p>
+  <a href="https://github.com/MamoMGD1" title="MamoMGD1">
+    <img src="https://github.com/MamoMGD1.png?size=60" width="60" height="60" alt="MamoMGD1" style="border-radius:50%; vertical-align:middle;" />
+  </a>
+  <a href="https://github.com/MamoMGD1" title="MamoMGD1" style="text-decoration:none; margin-left:8px; vertical-align:middle;">
+    <strong>MamoMGD1</strong>
+  </a>
+
+  &nbsp;&nbsp;&nbsp;
+
+  <a href="https://github.com/mo-geabel" title="mo-geabel">
+    <img src="https://github.com/mo-geabel.png?size=60" width="60" height="60" alt="mo-geabel" style="border-radius:50%; vertical-align:middle;" />
+  </a>
+  <a href="https://github.com/mo-geabel" title="mo-geabel" style="text-decoration:none; margin-left:8px; vertical-align:middle;">
+    <strong>mo-geabel</strong>
+  </a>
+</p>
 
 ---
 
